@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-white bg-gray-900;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply px-4 py-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-500;
+  }
+}
+
+@layer utilities {
+  .draggable {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+  }
+
+  .no-drag {
+    -webkit-user-select: none;
+    -webkit-app-region: no-drag;
+  }
+
+  .invisible-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Webkit */
+  }
+
+  .invisible-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+}
