@@ -13,6 +13,9 @@
 /out/
 /renderer/.next/
 
+# electron
+/main
+
 # production
 /build
 
